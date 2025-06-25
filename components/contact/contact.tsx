@@ -10,14 +10,14 @@ const ContactPage = () => {
         message: ''
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:any) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
         // Ici vous pouvez ajouter la logique d'envoi
