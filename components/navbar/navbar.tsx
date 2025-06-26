@@ -8,7 +8,7 @@ import ThemeToggleButton from "@/components/button-theme";
 const Navbar = () => {
   const handleWhatsAppClick = () => {
     const whatsappUrl =
-      "https://wa.me/+22871107173?text=Bonjour%20EdjamShoes%2C%20je%20suis%20intéressé(e)%20par%20vos%20sandales%20artisanales.%20Pouvez-vous%20me%20donner%20plus%20d'informations%20%3F";
+      "https://wa.me/+22893034640?text=Bonjour%20EdjamShoes%2C%20je%20suis%20intéressé(e)%20par%20vos%20sandales%20artisanales.%20Pouvez-vous%20me%20donner%20plus%20d'informations%20%3F";
 
     window.open(whatsappUrl, "_blank");
   };
