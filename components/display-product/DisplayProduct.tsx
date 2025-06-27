@@ -3,6 +3,8 @@ import ProductCard from "@/components/card-product";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MessageCircle, Phone } from "lucide-react";
 import { link } from "fs";
+import { useRouter } from "next/navigation";
+import ModernProductCard from "../card-futirist";
 
 const handleWhatsAppClick = () => {
   const whatsappUrl =
@@ -80,6 +82,7 @@ const AppointmentCard = () => {
 };
 
 const DisplayProduct = ({ slice = 2 }: { slice: number }) => {
+  const router = useRouter();
   return (
     <div className="w-full px-4 py-8">
       <div className="text-center mb-12">
@@ -95,7 +98,7 @@ const DisplayProduct = ({ slice = 2 }: { slice: number }) => {
 
       <div className="flex justify-end p-3">
         <Button
-          onClick={handleWhatsAppClick}
+          onClick={() => router.push("/products")}
           effect="expandIcon"
           icon={ArrowRight}
           iconPlacement="right"
@@ -106,8 +109,8 @@ const DisplayProduct = ({ slice = 2 }: { slice: number }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         {/* Affichage des 2 premières cartes produits */}
-        {products.slice(0, 2).map((product, index) => (
-          <ProductCard key={index} {...product} />
+        {products.slice(0, slice).map((product, index) => (
+          <ModernProductCard key={index} {...product} />
         ))}
 
         <AppointmentCard />

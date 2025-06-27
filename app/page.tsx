@@ -25,9 +25,9 @@ export default function Page() {
       </div>
 
       <div className="max-w-6xl mx-auto">
-        <DisplayProduct slice={2} />
         <AboutSection />
-        <ContactPage />
+        <DisplayProduct slice={2} />
+        {/* <ContactPage /> */}
         <Footer />
       </div>
     </div>

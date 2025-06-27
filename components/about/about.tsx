@@ -10,52 +10,36 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-clash font-bold text-foreground mb-6">
-                Notre Histoire
+                Qui sommes-nous
               </h2>
+              <h3 className="text-xl md:text-2xl font-semibold text-primary mb-6">
+                EdjamShoes – L'âme du cuir, l'élégance du geste
+              </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                EdjamShoes est né du rêve d'un artisan togolais passionné par
-                l'art de la chaussure. Notre mission est de redonner à chaque
-                pas la noblesse qu'il mérite, en créant des pièces uniques
-                faites à la main, avec amour et précision. C'est bien plus que
-                des chaussures : c'est un style, un engagement, une vision.
+                Basée à Lomé, au Togo, EdjamShoes est une maison artisanale
+                spécialisée dans la fabrication de sandales haut de gamme pour
+                homme. Chaque paire est entièrement cousue à la main, pensée
+                pour durer, et conçue comme une pièce unique.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                Nous aspirons à devenir l'un des meilleurs "shoesmakers" du
-                Togo, avec une signature qui allie tradition africaine et
-                finesse du luxe contemporain.
+                Portée par la passion de son fondateur, la marque redonne ses
+                lettres de noblesse à la sandale africaine, en mêlant
+                authenticité, exigence et raffinement.
               </p>
-            </div>
-
-            <div className="bg-muted/50 p-6 rounded-lg border border-border">
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Fait Main. Fierté Togolaise.
-              </h3>
-
-              <div className="space-y-4">
-                <h4 className="text-xl font-semibold text-foreground">
-                  Un savoir-faire d'exception
-                </h4>
-                <p className="text-muted-foreground">
-                  Chez EdjamShoes, chaque paire est façonnée à la main, dans le
-                  respect des traditions artisanales. Nos artisans sélectionnent
-                  un cuir véritable pleine fleur, choisi pour sa souplesse, sa
-                  durabilité et sa noblesse.
-                </p>
-                <p className="text-muted-foreground">
-                  Ce travail de précision donne naissance à des chaussures
-                  uniques, où chaque couture raconte une histoire. Plus qu'un
-                  produit, c'est un engagement : celui de l'authenticité, de la
-                  qualité et de l'excellence.
-                </p>
-              </div>
-
-              <Button className="mt-6">Découvrir notre engagement</Button>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                EdjamShoes incarne un luxe discret, enraciné en Afrique et
+                ouvert sur le monde. Nos créations s'adressent aux hommes qui
+                valorisent le style, le savoir-faire et l'artisanat vrai.
+              </p>
             </div>
           </div>
 
           {/* Colonne de droite - Image */}
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
-            <img src="/images/image (13).jpg" alt="" />
+            <img
+              src="/images/cuir.jpg"
+              alt="Artisan EdjamShoes travaillant le cuir dans l'atelier de Lomé"
+            />
           </div>
         </div>
       </div>
