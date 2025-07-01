@@ -20,7 +20,7 @@ const products = [
       "Sandales artisanales en cuir véritable, conçues pour un confort exceptionnel et un style intemporel. Parfaites pour le climat tropical togolais.",
     image: "/images/image (1).jpg",
     buttonText: "En savoir plus",
-    link: "https://wa.me/+22893034640?text=Bonjour%20EdjamShoes%2C%20je%20souhaiterais%20prendre%20rendez-vous%20pour%20découvrir%20vos%20sandales%20artisanales%20et%20discuter%20d'une%20commande%20personnalisée.",
+    link: "/products",
   },
   {
     title: "Sandales Bohème Chic",
@@ -28,7 +28,7 @@ const products = [
       "Collection bohème aux détails raffinés, ornées de perles et motifs ethniques. Idéales pour un look décontracté et élégant.",
     image: "/images/image (7).jpg",
     buttonText: "Découvrir",
-    link: "https://wa.me/+22893034640?text=Bonjour%20EdjamShoes%2C%20je%20souhaiterais%20prendre%20rendez-vous%20pour%20découvrir%20vos%20sandales%20artisanales%20et%20discuter%20d'une%20commande%20personnalisée.",
+    link: "/products",
   },
 ];
 
@@ -96,12 +96,13 @@ const DisplayProduct = ({ slice = 2 }: { slice: number }) => {
         </p>
       </div>
 
-      <div className="flex justify-end p-3">
+      <div className="flex justify-end p-3 w-full py-3">
         <Button
           onClick={() => router.push("/products")}
           effect="expandIcon"
           icon={ArrowRight}
           iconPlacement="right"
+          className="w-full"
         >
           Voir Plus
         </Button>

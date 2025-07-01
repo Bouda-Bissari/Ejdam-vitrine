@@ -137,14 +137,15 @@ const DisplayModernProducts = () => {
         <Alert className="bg-primary/10 border-primary text-foreground">
           <CircleFadingPlus className="h-4 w-4 text-primary" />
           <AlertTitle className="font-semibold">
-            Nouvelle Collection 2025
+            Artisanat Togolais d'Exception
           </AlertTitle>
           <AlertDescription>
-            Découvrez nos dernières créations artisanales disponibles en édition
-            limitée.
+            Chaque paire raconte l'histoire de nos maîtres artisans. Découvrez un savoir-faire ancestral sublimé par des finitions contemporaines.
           </AlertDescription>
         </Alert>
       </div>
+
+
 
       {/* Products Grid */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl pb-16">

@@ -85,7 +85,9 @@ const ModernProductCard = ({
         {/* Bouton d'action */}
         <Button
           onClick={() => handleWhatsAppClick(link)}
-          className="w-full"
+          //   onClick={() => router.push("/products")}
+
+            className="w-full"
           variant="outline"
         >
           {buttonText}
